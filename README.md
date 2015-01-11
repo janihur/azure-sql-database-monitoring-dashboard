@@ -1,5 +1,7 @@
 # Azure SQL Database Monitoring Dashboard
 
+Build on top of [Dashing](http://dashing.io/).
+
 ## Development Environment
 
 Uses [Vagrant](https://www.vagrantup.com/) - `Vagrantfile` included:
@@ -12,6 +14,10 @@ $ vagrant halt
 # normal startup
 $ vagrant up
 $ vagrant ssh
+vagrant@azure-sql-dashboard:~$ cd /vagrant/src
+# create dbconfig.yml
+vagrant@azure-sql-dashboard:/vagrant/src$ vi dbconfig.yml
+vagrant@azure-sql-dashboard:/vagrant/src$ bundle && dashing start
 ```
 
 ## License

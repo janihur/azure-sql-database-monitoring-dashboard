@@ -1,1 +1,4 @@
+*DS_STORE
 .vagrant
+history.yml
+Gemfile.lock
