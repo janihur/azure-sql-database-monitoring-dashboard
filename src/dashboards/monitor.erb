@@ -1,0 +1,43 @@
+<% content_for :title do %>Azure SQL Database Monitoring<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="active_session_count"
+           data-view="Number"
+           data-title="DB Active Sessions"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="storage_in_megabytes"
+           data-view="Number"
+           data-title="DB Storage"
+           data-suffix="MB"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="avg_cpu_percent"
+           data-view="Meter"
+           data-title="DB CPU %"
+           data-min="0"
+           data-max="100"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="avg_physical_data_read_percent"
+           data-view="Meter"
+           data-title="DB Physical Data Read %"
+           data-min="0"
+           data-max="100"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="avg_log_write_percent"
+           data-view="Meter"
+           data-title="DB Log Write %"
+           data-min="0"
+           data-max="100"></div>
+    </li>
+
+  </ul>
+
+</div>
